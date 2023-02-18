@@ -1,10 +1,10 @@
 from triangle.triangle import Triangle
-import lesson_py_test
+import pytest
 
 
 class TestTrianglePtest:
 
-    @lesson_py_test.mark.parametrize("a, b, c",
+    @pytest.mark.parametrize("a, b, c",
                                      [(7, 8, 9), (9, 7, 8)])
     def test_triangle_eq(self, a, b, c):
         first = Triangle(a, b, c)
@@ -22,7 +22,7 @@ class TestTrianglePtest:
     def test_triangle_rb(self, rb_triangle):
         assert rb_triangle.two_sides_eq()
 
-    @lesson_py_test.mark.parametrize("a, b, c",
+    @pytest.mark.parametrize("a, b, c",
                                      [(7, 8, 9), (9, 7, 8)])
     def test_triangle_rb_2(self, rb_triangle, a, b, c):
         assert rb_triangle.two_sides_eq()

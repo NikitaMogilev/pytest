@@ -2,7 +2,7 @@ import math
 
 
 class Triangle(object):
-    def __init__(self, a, b, c):
+    def __init__(self, a: object, b: object, c: object) -> object:
         if self._check_if_exist(a, b, c):
             self.a = a
             self.b = b
