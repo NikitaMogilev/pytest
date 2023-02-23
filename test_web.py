@@ -10,5 +10,5 @@ def test_web():
     search_box = chrome.find_element(By.CLASS_NAME, 'gLFyf')
     search_box.send_keys('python 3.10')
     search_box.submit()
-    assert 'python3.10' in chrome.title
+    assert 'python 3.10' in chrome.title
     chrome.close()
