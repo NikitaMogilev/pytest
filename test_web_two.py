@@ -25,7 +25,7 @@ def test_web(browser):
     password_locator = (By.XPATH, "/html//form//td//tbody//input[contains(@type,'password')]")
     password_box = chrome.find_element(password_locator[0], password_locator[1])
     password_box.send_keys('dfgdfg')
-    save_button_locator = (By.XPATH, '*[@value="save"]')
+    save_button_locator = (By.XPATH, '//*[@value="save"]')
     save_button = chrome.find_element(save_button_locator[0], save_button_locator[1])
     save_button.click()
     chrome.close()
