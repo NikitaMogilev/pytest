@@ -10,12 +10,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import math
-from shop_main_page import ShopMainPage
-from shop_cart_page import ShopCartPage
-from shop_login_page import ShopLoginPage
-from locat import MainPageLocators
-from locat import LoginPagelocators
-from locat import CartLocators
+from .base_page import BasePage
+from .shop_cart_page import ShopCartPage
+from .shop_login_page import ShopLoginPage
+from .shop_main_page import ShopMainPage
+# from locat import MainPageLocators
+# from locat import LoginPagelocators
+# from locat import CartLocators
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.select import Select
 

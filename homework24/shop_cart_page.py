@@ -8,10 +8,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import math
-from base_page import random_name_address
-from base_page import BasePage
-from locat import CartLocators
-from locat import LoginPagelocators
+from .base_page import random_name_address
+from .base_page import BasePage
+from .locat import CartLocators
+from .locat import LoginPagelocators
 from selenium.webdriver.support.select import Select
 
 

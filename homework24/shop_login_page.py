@@ -8,13 +8,13 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import math
-from base_page import BasePage
-from locat import MainPageLocators
-from locat import LoginPagelocators
+from .base_page import BasePage
+from .locat import MainPageLocators
+from .locat import LoginPagelocators
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.select import Select
 from selenium.common.exceptions import TimeoutException
-from base_page import random_mail
+from .base_page import random_mail
 
 
 class ShopLoginPage(BasePage):
@@ -68,6 +68,7 @@ class ShopLoginPage(BasePage):
         self.user_email = 'nikita3@mail.ru'
         self.send_keys(locator=LoginPagelocators.new_user_email, content=self.user_email)
         self.click_element(LoginPagelocators.create_user_button)
+        time.sleep(5)
         assert self.find_element(LoginPagelocators.twice_user).is_displayed()
 
     def user_verification(self):
