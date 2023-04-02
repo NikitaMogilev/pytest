@@ -7,7 +7,7 @@ table = Table()
 table.computer_table()
 
 print('===== TASK 1 =====\n'
-      'Summary costs of components ')gi
+      'Summary costs of components ')
 query = "SELECT SUM(PRO_PRICE) FROM test_db.PC"
 cursor.execute(query)
 res = cursor.fetchall()[0][0]
